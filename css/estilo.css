@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0; 
+    /*border: red solid 1px;*/
+}
+
+/*FUENTES*/
+
+@font-face {
+    font-family: neue;
+    src: url(neue.ttf);
+}
+
+
+@font-face {
+    font-family: freight;
+    src: url(freight.otf);
+ }
+
+/*BODY*/
+
+body {
+    font-family: neue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+
+
+
+.nombreInicio {
+    font-family: freight;
+    font-size: 3rem;
+    margin-right: 30px;
+}
+
+.subrayadoSeccion{
+    text-decoration: line-through;
+}
+.imgIniciales {
+    width: 110px;
+}
+
+.imagenInicio {
+    
+    background-image: url(../img/imagen-inicio.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    /* width: 100vw; */
+    
+       
+ 
+
+    }
+
+.btnEscuchar {
+    background-color:rgb(138, 64, 161);
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.btnEscuchar:hover {
+    background-color: #B59ECA;
+    color: white;
+}
+
+.cardEdicion {
+    /* border: none; */
+}
+    /* margin-left: 10px;
+    margin-right: 10px;
+ */
+
+
+.categoriaItem {
+    padding-right: 16px;
+    padding-left: 14px;
+    border-left: rgb(58, 58, 58) solid 1px;
+   
+}
+
+
+.menuNav {
+    margin-left: 20px;
+}
+.menuNav a{
+    font-size: 1.4rem;    
+    color: rgb(58, 58, 58);
+    
+
+}
+
+.menuNav a:hover {
+    color: black;
+    
+}
+
+
+
+.socialesNav a {
+    font-size: 1rem; 
+    color: rgb(58, 58, 58);
+    
+} 
+.socialesNav a:hover {
+    color: black;
+}
+
+.socialesNav a:focus {
+    color: black;
+}
+
+
+.socialItem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.controlPadre {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navbar-toggler:focus {
+    
+    outline: none;
+    box-shadow: none;
+    border: none;
+
+}
+
+.contenedorVacio {
+    flex: 1;
+}
+.contenedorInfo {
+    margin: 60px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondoObras {
+    background-color: #B59ECA;
+}
+
+.contenedorObras {
+    flex:1;
+    width: 80%;
+    
+}
+
+.fotoRo {
+    width: 300px;
+}
+
+.textoInfo {
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.fondoInfo {
+    background-color: #6ED2FC;
+}
+
+footer {
+    border-top: 1px solid rgb(58, 58, 58);
+    
+    
+    
+}
+
+footer p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media (max-width:1120px) {
+    audio {
+        transform: scale(0.75);
+    }
+}
+
+
+
+
+@media (max-width:1120px) {
+    .menuNav a {
+        font-size: 1.1rem;
+    }
+    .nombreInicio {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:855px) and (max-width:890px)  {
+    
+    .textoInfo {
+        font-size: 21px;
+    }
+   
+}
+
+@media (max-width:855px)  {
+    
+    .textoInfo {
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width:767px)  {
+
+    .contenedorInfo {
+        width: 80%;
+    }
+    
+    .textoInfo {
+        font-size: 18px;
+    } 
+}
