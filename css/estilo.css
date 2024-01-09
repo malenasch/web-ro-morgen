@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0; 
-    /*border: red solid 1px;*/
+    /* border: red solid 1px; */
 }
 
-/*FUENTES*/
+
+
+/****FUENTES****/
 
 @font-face {
     font-family: neue;
@@ -17,17 +19,25 @@
     src: url(freight.otf);
  }
 
-/*BODY*/
+ .subrayadoSeccion{
+    text-decoration: line-through;
+}
+
+
+
+/****BODY****/
 
 body {
     font-family: neue;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%; /*ACA HICE EL CAMBIO Q ME DESACOMODO EL FOOTER*/
   }
 
 
+
+/****HOME****/
 
 .nombreInicio {
     font-family: freight;
@@ -35,81 +45,72 @@ body {
     margin-right: 30px;
 }
 
-.subrayadoSeccion{
-    text-decoration: line-through;
-}
-.imgIniciales {
-    width: 110px;
-}
 
 .imagenInicio {
-    
     background-image: url(../img/imagen-inicio.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
-    /* width: 100vw; */
-    
-       
- 
-
-    }
-
-.btnEscuchar {
-    background-color:rgb(138, 64, 161);
-    color: white;
-    margin-top: 10px;
-    text-align: left;
 }
 
-.btnEscuchar:hover {
-    background-color: #B59ECA;
-    color: white;
+
+.contenedorVacio {
+    flex: 1;
 }
 
-.cardEdicion {
-    /* border: none; */
-}
-    /* margin-left: 10px;
-    margin-right: 10px;
- */
 
+/****CONTROL MUSICA****/
+
+
+.controlPadre {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/****CATEGORIAS NAVBAR****/
 
 .categoriaItem {
     padding-right: 16px;
     padding-left: 14px;
     border-left: rgb(58, 58, 58) solid 1px;
-   
 }
 
 
 .menuNav {
     margin-left: 20px;
 }
+
+
 .menuNav a{
     font-size: 1.4rem;    
     color: rgb(58, 58, 58);
-    
-
 }
+
 
 .menuNav a:hover {
-    color: black;
-    
+    color: black; 
 }
 
 
+
+/****REDES SOCIALES****/
 
 .socialesNav a {
     font-size: 1rem; 
     color: rgb(58, 58, 58);
-    
 } 
+
+
 .socialesNav a:hover {
     color: black;
 }
+
 
 .socialesNav a:focus {
     color: black;
@@ -121,47 +122,14 @@ body {
     padding-bottom: 10px;
 }
 
-.controlPadre {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
+/****INFO****/
 
-.navbar-toggler:focus {
-    
-    outline: none;
-    box-shadow: none;
-    border: none;
-
-}
-
-.contenedorVacio {
-    flex: 1;
-}
 .contenedorInfo {
-    margin: 60px;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 85%;
 }
 
-.fondoObras {
-    background-color: #B59ECA;
-}
-
-.contenedorObras {
-    flex:1;
-    width: 80%;
-    
-}
-
-.fotoRo {
-    width: 300px;
-}
 
 .textoInfo {
     font-size: 22px;
@@ -170,15 +138,54 @@ body {
 }
 
 .fondoInfo {
-    background-color: #6ED2FC;
+    background: linear-gradient(to bottom, #64C2F9, #a9e0fc) ;
 }
+
+
+
+/****OBRAS****/
+
+.btnEscuchar {
+    background-color:rgb(138, 64, 161);
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+.btnEscuchar:hover {
+    background-color: #B59ECA;
+    color: black;
+}
+
+
+.cardEdicion {
+    border: none;
+}
+
+
+.fondoObras {
+    background: linear-gradient(to bottom, #B29DC5, #DDDDFF) ;
+}
+
+
+.contenedorObras {
+    width: 80%;
+}
+
+
+h4 {
+    text-transform: bold;
+}
+
+
+/****FOOTER****/
 
 footer {
     border-top: 1px solid rgb(58, 58, 58);
-    
-    
-    
+    width: 100%;
 }
+
 
 footer p {
     padding-top: 10px;
@@ -187,6 +194,12 @@ footer p {
     margin-bottom: 0;
 }
 
+
+
+/****MEDIA QUERIES****/
+
+/*Control audio*/
+
 @media (max-width:1120px) {
     audio {
         transform: scale(0.75);
@@ -194,40 +207,82 @@ footer p {
 }
 
 
-
+/*Tamaño fuentes*/
 
 @media (max-width:1120px) {
+
     .menuNav a {
         font-size: 1.1rem;
     }
+
     .nombreInicio {
         font-size: 2rem;
     }
 }
 
-@media (min-width:855px) and (max-width:890px)  {
+
+@media (min-width:1000px)   {
     
     .textoInfo {
         font-size: 21px;
     }
-   
 }
 
-@media (max-width:855px)  {
+
+@media (min-width:960px) and (max-width:1000px)  {
+    
+    .textoInfo {
+        font-size: 20px;
+    }
+    
+}
+
+@media (min-width:920px) and (max-width:960px)  {
+    
+    .textoInfo {
+        font-size: 19px;
+    }
+}
+
+
+@media (min-width:875px) and (max-width:920px)  {
     
     .textoInfo {
         font-size: 18px;
     }
-    
 }
+
+
+@media (max-width:875px) {
+    
+    .textoInfo {
+        line-height: 1.5;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1300px) {
+    h4 {
+        font-size: 20px;
+    }
+}
+
+
+/*Ajustes contenedores*/
 
 @media (max-width:767px)  {
 
     .contenedorInfo {
-        width: 80%;
+        max-width: 75%;
     }
-    
-    .textoInfo {
-        font-size: 18px;
-    } 
 }
+
+
+@media (max-width:1200px) {
+    .contenedorObras {
+        width: 60%;
+        margin: 0;
+    }
+}
+
+
