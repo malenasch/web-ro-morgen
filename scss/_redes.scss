@@ -1,0 +1,22 @@
+/****REDES SOCIALES****/
+
+.socialesNav a {
+    font-size: 1rem;
+    color: $color-fuentes;
+    transition: all 0.3s;
+
+      &:hover {
+          color: $color-fuentes-sec;
+          scale: 1.1;
+          
+      }
+  }
+  
+    
+  
+  
+  .socialItem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  

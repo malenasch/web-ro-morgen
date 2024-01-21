@@ -1,0 +1,22 @@
+.fondoDisenoSonoro {
+    background: linear-gradient(to bottom, #B29DC5, #DDDDFF);
+}
+
+
+
+.btnEscucharDS {
+    background-color:$color-botones1;
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+    transition: all 0.3s;
+  
+    &:hover {
+      background-color: $color-botones-sec1;
+      color: $color-fuentes-sec;
+      scale: 1.1;
+    }
+  }
+  
+
+

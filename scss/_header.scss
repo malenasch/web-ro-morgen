@@ -1,0 +1,57 @@
+/****HEADER - CATEGORIAS NAVBAR****/
+
+
+@keyframes rocio{
+    0% {
+        color: #000000;
+    }
+
+    25% {
+        color: #226bab;
+    }
+
+    50% {
+        color: #000000;
+    }
+    75% {
+        color: #ac60c4;
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.nombreInicio {
+    font-family: freight;
+    font-size: 3rem;
+    margin-right: 30px;
+    animation-name: rocio;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+
+.categoriaItem {
+    padding-right: 16px;
+    padding-left: 14px;
+    border-left: rgb(58, 58, 58) solid 1px;
+}
+
+.menuNav {
+    margin-left: 20px;
+    a {
+        font-size: 1.4rem;
+        color: $color-fuentes;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $color-fuentes-sec;
+            scale: 1.06;
+        }
+    }
+}
+
+.subrayadoSeccion{
+    text-decoration: line-through;
+    
+}

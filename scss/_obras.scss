@@ -1,0 +1,32 @@
+/****OBRAS****/
+
+.btnEscuchar {
+    background-color:$color-botones2;
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+    transition: all 0.3s;
+  
+    &:hover {
+      background-color: $color-botones-sec2;
+      color: $color-fuentes-sec;
+      scale: 1.1;
+    }
+  }
+  
+  .cardEdicion {
+    border: none;
+    max-width: 260px;
+    min-width: 210px;
+    margin: auto;
+  }
+  
+  .fondoObras {
+    background: linear-gradient(to bottom, #82acfa, #b8cffa);
+  }
+  
+
+  h4 {
+    text-transform: bold;
+  }
+  

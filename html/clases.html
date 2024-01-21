@@ -5,39 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocio Morgenstern</title>
-    <!-- CSS - BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
-<body class="container-fluid imagenInicio">
+<body class="container-fluid fondoClases">
+
 
 
     <header class="navbar navbar-expand-lg navbar-transparent bg-transparent">
-        <div class="container-fluid ">
-            <a class="navbar-brand nombreInicio" href="#">Rocio Morgenstern</a>
+        <div class="container-fluid">
+            <a class="navbar-brand nombreInicio" href="../index.html">Rocio Morgenstern</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse " id="navbarNav">
+            <nav class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto menuNav">
                     <li class="nav-item categoriaItem ">
-                        <a class="nav-link" href="html/info.html">INFO</a>
-                    </li>
-                    <li class="nav-item  categoriaItem">
-                        <a class="nav-link" href="html/diseno-sonoro.html">DISEÑO SONORO</a>
+                        <a class="nav-link" href="info.html">INFO</a>
                     </li>
                     <li class="nav-item categoriaItem">
-                        <a class="nav-link" href="html/obras.html">OBRAS</a>
+                        <a class="nav-link" href="diseno-sonoro.html">DISEÑO SONORO</a>
                     </li>
                     <li class="nav-item categoriaItem">
-                        <a class="nav-link " href="html/clases.html">CLASES</a>
+                        <a class="nav-link" href="obras.html">OBRAS</a>
                     </li>
                     <li class="nav-item categoriaItem">
-                        <a class="nav-link " href="html/contacto.html">CONTACTO</a>
+                        <a class="nav-link  subrayadoSeccion" href="clases.html">CLASES</a>
+                    </li>
+                    <li class="nav-item categoriaItem">
+                        <a class="nav-link " href="contacto.html">CONTACTO</a>
                     </li>
                 </ul>
             </nav>
@@ -45,17 +46,23 @@
     </header>
 
 
-    <main class="contenedorVacio">
-        <p></p>
-    </main>
-
-
-
-    <div class="controlPadre">
-        <div class=" controlHijo ">
-            <audio controls autoplay src="music/partes-de-mi.mp3"></audio>
+    <div class="container-fluid contenedorClases d-flex justify-content-center text-center  my-xl-3 my-lg-3 my-md-0 "
+        style="max-width: 800px; " data-aos="zoom-in" data-aos-duration="2000">
+        <div class="row">
+            <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img src="../img/clasesbyn.jpg" class="img-fluid  rounded imagenClase" style="max-width: 350px;"
+                    alt="...">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img src="../img/seminariosbyn.jpg" class="img-fluid  rounded  imagenSeminario"
+                    style="max-width: 350px;" alt="...">
+            </div>
         </div>
     </div>
+
+
+
+
 
 
     <div class="container-fluid contenedorFooter mt-4 mb-2 pt-2 px-2">
@@ -82,6 +89,11 @@
             </ul>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
