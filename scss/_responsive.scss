@@ -18,15 +18,37 @@
   .nombreInicio {
     font-size: 2rem;
   }
-
-  .contenedorContacto {
-    scale: 0.90;
-  }
 }
 
 @media (min-width: 1000px) {
   .textoInfo {
     font-size: 21px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
   }
 }
 
@@ -50,11 +72,6 @@
   }
 }
 
-@media (max-width: 1300px) {
-  h4 {
-    font-size: 20px;
-  }
-}
 
 /*Ajustes contenedores*/
 
@@ -65,6 +82,36 @@
   }
 }
 
+@media (min-width: 1200px) {
+
+  .contenedorInfo {
+    padding-bottom: 7px;
+  }
+
+  .contenedorClases {
+    padding-bottom: 7px;
+    padding-top: 6px;
+  }
+
+  .contenedorDS {
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+
+  .contenedorContacto {
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
+
+  .contenedorObras {
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+}
+
+
+/*Ajustes imagenes*/
+
 @media (max-width: 1120px) {
   .imagenClase, .imagenSeminario {
     transform: scale(0.9, 0.9);
@@ -74,25 +121,5 @@
 @media (max-width: 360px) {
   .imagenClase, .imagenSeminario {
     transform: scale(0.8, 0.8);
-  }
-}
-
-@media (min-width: 1200px) {
-  .contenedorClases {
-    padding-bottom: 3px;
-    padding-top: 3px;
-  }
-
-  .contenedorDS {
-    padding-top: 14px;
-  }
-
-  .contenedorContacto {
-    padding-top: 10px;
-    padding-bottom: 15px;
-  }
-
-  .contenedorObras {
-    padding-top: 3px;
   }
 }
