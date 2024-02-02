@@ -172,20 +172,24 @@ h2, h3, h4 {
   flex: 1;
 }
 
-/****CONTROL MUSICA****/
-.controlPadre {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .fondoClases {
   background: linear-gradient(to bottom, #a79add, #d5cfec);
 }
 
 .fondoContacto {
   background: linear-gradient(to bottom, #78cee3, #baeefc);
+}
+
+.btnEnviar {
+  background-color: rgb(100, 200, 227);
+  color: white;
+  text-align: left;
+  transition: all 0.3s;
+}
+.btnEnviar:hover {
+  background-color: rgb(152, 224, 248);
+  color: black;
+  scale: 1.1;
 }
 
 /****FOOTER****/
@@ -263,7 +267,7 @@ h2, h3, h4 {
     padding-bottom: 7px;
   }
   .contenedorClases {
-    padding-bottom: 7px;
+    padding-bottom: 15px;
     padding-top: 6px;
   }
   .contenedorDS {
@@ -272,7 +276,7 @@ h2, h3, h4 {
   }
   .contenedorContacto {
     padding-top: 20px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
   }
   .contenedorObras {
     padding-top: 9px;

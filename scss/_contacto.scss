@@ -2,3 +2,15 @@
     background: linear-gradient(to bottom, #78cee3, #baeefc) ;
 }
 
+.btnEnviar {
+    background-color:$color-botones3;
+    color: white;
+    text-align: left;
+    transition: all 0.3s;
+  
+    &:hover {
+      background-color: $color-botones-sec3;
+      color: $color-fuentes-sec;
+      scale: 1.1;
+    }
+  }
